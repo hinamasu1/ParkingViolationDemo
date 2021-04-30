@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/button_logintop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="共通パスワード画面"
+        app:layout_constraintBottom_toTopOf="@+id/button_loginuser"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button_loginuser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ユーザー認証画面"
+        app:layout_constraintBottom_toTopOf="@+id/button_adminmode"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_logintop" />
+
+    <Button
+        android:id="@+id/button_adminmode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="管理者モード画面"
+        app:layout_constraintBottom_toTopOf="@+id/button_wizmenu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_loginuser" />
+
+    <Button
+        android:id="@+id/button_wizmenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="取締メニュー"
+        app:layout_constraintBottom_toTopOf="@+id/button_wizseries"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_adminmode" />
+
+    <Button
+        android:id="@+id/button_wizseries"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="定型モード"
+        app:layout_constraintBottom_toTopOf="@+id/button_violist"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_wizmenu" />
+
+    <Button
+        android:id="@+id/button_violist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="フリーモード"
+        app:layout_constraintBottom_toTopOf="@+id/button_label"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_wizseries" />
+
+    <Button
+        android:id="@+id/button_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="印刷設定画面"
+        app:layout_constraintBottom_toTopOf="@+id/button_viostatics"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_violist" />
+
+    <Button
+        android:id="@+id/button_viostatics"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="取締集計"
+        app:layout_constraintBottom_toTopOf="@+id/button_userinfo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_label" />
+
+    <Button
+        android:id="@+id/button_userinfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ユーザー情報画面"
+        app:layout_constraintBottom_toTopOf="@+id/button_wizmanager"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_viostatics" />
+
+    <Button
+        android:id="@+id/button_wizmanager"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="取締手順画面"
+        app:layout_constraintBottom_toTopOf="@+id/button_timeconfirm"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_userinfo" />
+
+    <Button
+        android:id="@+id/button_timeconfirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="時刻確認画面"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_wizmanager" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

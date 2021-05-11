@@ -120,6 +120,12 @@ public class MainActivity extends AppCompatActivity {
     }
 
     @Override
+    protected void onSaveInstanceState(Bundle bundle) {
+        super.onSaveInstanceState(bundle);
+        bundle.putString("param1", "arg1");
+    }
+
+    @Override
     protected void onDestroy() {
         Log.d(_tag, "onDestroy()");
 

@@ -15,4 +15,32 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/header_statistics" />
+
+    <ListView
+        android:id="@+id/list_list"
+        android:layout_width="0dp"
+        android:layout_height="267dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image_title" />
+
+    <TextView
+        android:id="@+id/text_total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="合計:０件"
+        app:layout_constraintEnd_toEndOf="@+id/list_list"
+        app:layout_constraintTop_toBottomOf="@+id/list_list" />
+
+    <Button
+        android:id="@+id/button_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:text="閉じる"
+        app:layout_constraintEnd_toEndOf="@+id/list_list"
+        app:layout_constraintTop_toBottomOf="@+id/text_total" />
 </androidx.constraintlayout.widget.ConstraintLayout>

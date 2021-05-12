@@ -20,11 +20,12 @@
         android:id="@+id/border1"
         android:layout_width="0dp"
         android:layout_height="145dp"
-        android:layout_marginStart="8dp"
+        android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
+        android:layout_marginEnd="16dp"
         android:background="@drawable/border"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/dummy1" />
 
@@ -42,57 +43,85 @@
         android:id="@+id/label_policestation"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="128dp"
-        android:text="警察署：" />
+        android:text="警察署："
+        app:layout_constraintEnd_toStartOf="@+id/text_policestation"
+        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintStart_toStartOf="@+id/border1"
+        tools:layout_editor_absoluteY="59dp" />
 
     <TextView
         android:id="@+id/text_policestation"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="104dp"
-        android:text="TextView"
-        app:layout_constraintEnd_toEndOf="@+id/border1" />
+        android:text="奈良署"
+        app:layout_constraintEnd_toEndOf="@+id/border1"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/label_policestation"
+        tools:layout_editor_absoluteY="59dp" />
 
     <TextView
         android:id="@+id/label_telephone"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="電話番号：" />
+        android:layout_marginTop="8dp"
+        android:text="電話番号："
+        app:layout_constraintEnd_toStartOf="@+id/text_telephone"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/border1"
+        app:layout_constraintTop_toBottomOf="@+id/label_policestation" />
 
     <TextView
         android:id="@+id/text_telephone"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="179dp"
-        android:text="TextView" />
-
-    <TextView
-        android:id="@+id/text_extension"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="44dp"
-        android:text="TextView" />
+        android:text="XX--XX-XXXX"
+        app:layout_constraintBaseline_toBaselineOf="@+id/label_telephone"
+        app:layout_constraintEnd_toEndOf="@+id/border1"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/label_telephone" />
 
     <TextView
         android:id="@+id/label_extension"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="内線番号：" />
+        android:layout_marginTop="8dp"
+        android:text="内線番号："
+        app:layout_constraintEnd_toStartOf="@+id/text_extension"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/border1"
+        app:layout_constraintTop_toBottomOf="@+id/label_telephone" />
+
+    <TextView
+        android:id="@+id/text_extension"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="XXXX"
+        app:layout_constraintBaseline_toBaselineOf="@+id/label_extension"
+        app:layout_constraintEnd_toEndOf="@+id/border1"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/label_extension" />
 
     <TextView
         android:id="@+id/label_device"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="端末番号：" />
+        android:layout_marginTop="8dp"
+        android:text="端末番号："
+        app:layout_constraintEnd_toStartOf="@+id/text_device"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/border1"
+        app:layout_constraintStart_toStartOf="@+id/border1"
+        app:layout_constraintTop_toBottomOf="@+id/label_extension" />
 
     <TextView
         android:id="@+id/text_device"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="80dp"
-        android:text="TextView"
-        app:layout_constraintEnd_toEndOf="@+id/text_extension"
-        tools:layout_editor_absoluteY="66dp" />
+        android:layout_width="0dp"
+        android:layout_height="17dp"
+        android:text="XXX"
+        app:layout_constraintBaseline_toBaselineOf="@+id/label_device"
+        app:layout_constraintEnd_toEndOf="@+id/border1"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/label_device" />
 
     <View
         android:id="@+id/dummy2"
@@ -106,10 +135,10 @@
     <View
         android:id="@+id/border2"
         android:layout_width="0dp"
-        android:layout_height="373dp"
-        android:layout_marginStart="8dp"
+        android:layout_height="272dp"
+        android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
+        android:layout_marginEnd="16dp"
         android:background="@drawable/border"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -137,10 +166,10 @@
     <View
         android:id="@+id/border3"
         android:layout_width="0dp"
-        android:layout_height="124dp"
-        android:layout_marginStart="8dp"
+        android:layout_height="91dp"
+        android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
+        android:layout_marginEnd="16dp"
         android:background="@drawable/border"
         app:layout_constraintEnd_toEndOf="@id/border2"
         app:layout_constraintStart_toStartOf="@id/border2"
@@ -156,6 +185,64 @@
         app:layout_constraintStart_toStartOf="@id/border3"
         app:layout_constraintTop_toBottomOf="@id/dummy3" />
 
+    <TextView
+        android:id="@+id/label_device_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="名前："
+        app:layout_constraintEnd_toStartOf="@+id/text_device_name"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/border3"
+        app:layout_constraintTop_toBottomOf="@+id/border_label3" />
+
+    <TextView
+        android:id="@+id/text_device_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="奈良太郎"
+        app:layout_constraintBaseline_toBaselineOf="@+id/label_device_name"
+        app:layout_constraintEnd_toEndOf="@+id/border3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/label_device_name" />
+
+    <TextView
+        android:id="@+id/label_input_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ID："
+        app:layout_constraintEnd_toStartOf="@+id/text_input_id"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/border3"
+        tools:layout_editor_absoluteY="304dp" />
+
+    <TextView
+        android:id="@+id/text_input_id"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="XXXXXX"
+        app:layout_constraintBaseline_toBaselineOf="@+id/label_input_id"
+        app:layout_constraintEnd_toEndOf="@+id/border3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/label_input_id" />
+
+    <TextView
+        android:id="@+id/label_input_period"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="期間："
+        app:layout_constraintBaseline_toBaselineOf="@+id/text_input_period"
+        app:layout_constraintEnd_toStartOf="@+id/text_input_period"
+        app:layout_constraintStart_toStartOf="@+id/border3" />
+
+    <TextView
+        android:id="@+id/text_input_period"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="2021/01/01まで"
+        app:layout_constraintEnd_toEndOf="@+id/border3"
+        app:layout_constraintStart_toEndOf="@id/label_input_period" />
+
     <View
         android:id="@+id/dummy4"
         android:layout_width="365dp"
@@ -168,12 +255,13 @@
     <View
         android:id="@+id/border4"
         android:layout_width="0dp"
-        android:layout_height="154dp"
-        android:layout_marginStart="8dp"
+        android:layout_height="103dp"
+        android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
+        android:layout_marginEnd="16dp"
         android:background="@drawable/border"
         app:layout_constraintEnd_toEndOf="@id/border2"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="@id/border2"
         app:layout_constraintTop_toBottomOf="@id/dummy4" />
 
@@ -186,6 +274,69 @@
         android:text="印刷担当"
         app:layout_constraintStart_toStartOf="@id/border4"
         app:layout_constraintTop_toBottomOf="@id/dummy4" />
+
+    <TextView
+        android:id="@+id/label_print_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="名前："
+        app:layout_constraintEnd_toStartOf="@+id/text_print_name"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/border4"
+        app:layout_constraintTop_toBottomOf="@+id/border_label4" />
+
+    <TextView
+        android:id="@+id/text_print_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="奈良花子"
+        app:layout_constraintBaseline_toBaselineOf="@+id/label_print_name"
+        app:layout_constraintEnd_toEndOf="@+id/border4"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/label_print_name" />
+
+    <TextView
+        android:id="@+id/label_print_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="ID："
+        app:layout_constraintEnd_toStartOf="@+id/text_print_id"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/border4"
+        app:layout_constraintTop_toBottomOf="@+id/label_print_name" />
+
+    <TextView
+        android:id="@+id/text_print_id"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="XXXXXX"
+        app:layout_constraintBaseline_toBaselineOf="@+id/label_print_id"
+        app:layout_constraintEnd_toEndOf="@+id/border4"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/label_print_id" />
+
+    <TextView
+        android:id="@+id/label_print_period"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="期間："
+        app:layout_constraintEnd_toStartOf="@+id/text_print_period"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/border4"
+        app:layout_constraintTop_toBottomOf="@+id/label_print_id" />
+
+    <TextView
+        android:id="@+id/text_print_period"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="2021/01/01まで"
+        app:layout_constraintBaseline_toBaselineOf="@+id/label_print_period"
+        app:layout_constraintEnd_toEndOf="@+id/border4"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/label_print_period" />
 
     <Button
         android:id="@+id/button_ok"

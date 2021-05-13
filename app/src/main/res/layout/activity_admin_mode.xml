@@ -14,64 +14,27 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/title_admin" />
 
-    <Button
-        android:id="@+id/button_transfer"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="転送"
-        app:layout_constraintBottom_toTopOf="@+id/button_done"
-        app:layout_constraintEnd_toStartOf="@+id/button_connect"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/border2" />
-
-    <Button
-        android:id="@+id/button_connect"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="72dp"
-        android:text="プリンタ接続"
-        app:layout_constraintBottom_toTopOf="@+id/button_device"
+    <View
+        android:id="@+id/dummy1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/button_transfer" />
-
-    <Button
-        android:id="@+id/button_done"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="管理終了"
-        app:layout_constraintEnd_toStartOf="@+id/button_device"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="607dp" />
-
-    <Button
-        android:id="@+id/button_device"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="デバイス管理"
-        app:layout_constraintBaseline_toBaselineOf="@+id/button_done"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/button_done" />
+        app:layout_constraintTop_toBottomOf="@+id/image_title" />
 
     <View
         android:id="@+id/border1"
-        android:layout_width="380dp"
+        android:layout_width="0dp"
         android:layout_height="133dp"
-        android:background="@drawable/border"
-        app:layout_constraintTop_toTopOf="@+id/dummy1"
-        tools:layout_editor_absoluteX="16dp" />
-
-    <View
-        android:id="@+id/border2"
-        android:layout_width="379dp"
-        android:layout_height="141dp"
+        android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
         android:background="@drawable/border"
-        app:layout_constraintTop_toBottomOf="@+id/dummy3"
-        tools:layout_editor_absoluteX="16dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/dummy1" />
 
     <TextView
         android:id="@+id/text_device"
@@ -80,14 +43,6 @@
         android:text="端末ID【】"
         tools:layout_editor_absoluteX="30dp"
         tools:layout_editor_absoluteY="102dp" />
-
-    <TextView
-        android:id="@+id/text_printer"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="印字機ID【】"
-        app:layout_constraintTop_toBottomOf="@+id/dummy3"
-        tools:layout_editor_absoluteX="29dp" />
 
     <EditText
         android:id="@+id/edit_device"
@@ -117,13 +72,35 @@
         app:layout_constraintBaseline_toBaselineOf="@+id/label_telephone"
         app:layout_constraintEnd_toEndOf="@+id/border1" />
 
-    <Button
-        android:id="@+id/button_change_printer"
+    <View
+        android:id="@+id/dummy3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/border1" />
+
+    <View
+        android:id="@+id/border2"
+        android:layout_width="0dp"
+        android:layout_height="141dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/border"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dummy3" />
+
+    <TextView
+        android:id="@+id/text_printer"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="変更"
-        app:layout_constraintBaseline_toBaselineOf="@+id/edit_printer"
-        app:layout_constraintEnd_toEndOf="@+id/border2" />
+        android:text="印字機ID【】"
+        app:layout_constraintTop_toBottomOf="@+id/dummy3"
+        tools:layout_editor_absoluteX="29dp" />
 
     <EditText
         android:id="@+id/edit_printer"
@@ -137,24 +114,54 @@
         app:layout_constraintStart_toStartOf="@+id/border2"
         app:layout_constraintTop_toBottomOf="@+id/dummy3" />
 
-    <View
-        android:id="@+id/dummy1"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginTop="16dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/image_title" />
+    <Button
+        android:id="@+id/button_change_printer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="変更"
+        app:layout_constraintBaseline_toBaselineOf="@+id/edit_printer"
+        app:layout_constraintEnd_toEndOf="@+id/border2" />
 
-    <View
-        android:id="@+id/dummy3"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginTop="27dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+    <Button
+        android:id="@+id/button_transfer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="転送"
+        app:layout_constraintEnd_toStartOf="@+id/button_connect"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/border1" />
+        app:layout_constraintTop_toBottomOf="@+id/border2" />
+
+    <Button
+        android:id="@+id/button_connect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="プリンタ接続"
+        app:layout_constraintBaseline_toBaselineOf="@+id/button_transfer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/button_transfer" />
+
+    <Button
+        android:id="@+id/button_done"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="管理終了"
+        app:layout_constraintEnd_toStartOf="@+id/button_device"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_transfer" />
+
+    <Button
+        android:id="@+id/button_device"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="デバイス管理"
+        app:layout_constraintBaseline_toBaselineOf="@+id/button_done"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/button_done" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

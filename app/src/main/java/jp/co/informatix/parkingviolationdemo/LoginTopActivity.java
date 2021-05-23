@@ -21,8 +21,21 @@ public class LoginTopActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.activity_login_top);
+        setOnClickListener();
         TextView version = (TextView)findViewById(R.id.text_version);
         version.setText("Ver " + "4.4.26a");
+    }
+
+    @Override
+    protected void onDestroy() {
+        Log.d(_tag, "onDestroy()");
+
+        super.onDestroy();
+    }
+
+    private void setOnClickListener() {
+        Log.d(_tag, "setOnClickLister()");
+
         Button recover = (Button)findViewById(R.id.button_recover);
         recover.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -31,6 +44,7 @@ public class LoginTopActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
         Button start = (Button)findViewById(R.id.button_start);
         start.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -39,6 +53,7 @@ public class LoginTopActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
         Button end = (Button)findViewById(R.id.button_end);
         end.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -46,12 +61,5 @@ public class LoginTopActivity extends AppCompatActivity {
                 Toast.makeText(getApplicationContext(), "終了ボタン", Toast.LENGTH_LONG).show();
             }
         });
-    }
-
-    @Override
-    protected void onDestroy() {
-        Log.d(_tag, "onDestroy()");
-
-        super.onDestroy();
     }
 }

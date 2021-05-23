@@ -19,27 +19,7 @@ public class LoginUserActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.activity_login_user);
-        Button start = (Button)findViewById(R.id.button_start);
-        start.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-            Toast.makeText(getApplicationContext(), "開始ボタン", Toast.LENGTH_LONG).show();
-            }
-        });
-        Button transfer = (Button)findViewById(R.id.button_transfer);
-        transfer.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Toast.makeText(getApplicationContext(), "転送ボタン", Toast.LENGTH_LONG).show();
-            }
-        });
-        Button end = (Button)findViewById(R.id.button_end);
-        end.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Toast.makeText(getApplicationContext(), "終了ボタン", Toast.LENGTH_LONG).show();
-            }
-        });
+        setOnClickListener();
     }
 
     @Override
@@ -47,5 +27,33 @@ public class LoginUserActivity extends AppCompatActivity {
         Log.d(_tag, "onDestroy()");
 
         super.onDestroy();
+    }
+
+    private void setOnClickListener() {
+        Log.d(_tag,"setOnClickListener()");
+
+        Button start = (Button)findViewById(R.id.button_start);
+        start.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getApplicationContext(), "開始ボタン", Toast.LENGTH_LONG).show();
+            }
+        });
+
+        Button transfer = (Button)findViewById(R.id.button_transfer);
+        transfer.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getApplicationContext(), "転送ボタン", Toast.LENGTH_LONG).show();
+            }
+        });
+
+        Button end = (Button)findViewById(R.id.button_end);
+        end.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getApplicationContext(), "終了ボタン", Toast.LENGTH_LONG).show();
+            }
+        });
     }
 }

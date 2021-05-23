@@ -48,56 +48,56 @@
         app:layout_constraintTop_toBottomOf="@id/list_entry" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/button_print"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
-        android:text="Button"
-        app:layout_constraintEnd_toStartOf="@+id/button2"
+        android:text="印刷"
+        app:layout_constraintEnd_toStartOf="@+id/button_cancel"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/button_cancel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button"
-        app:layout_constraintBaseline_toBaselineOf="@+id/button"
-        app:layout_constraintEnd_toStartOf="@+id/button4"
+        android:text="中断"
+        app:layout_constraintBaseline_toBaselineOf="@+id/button_print"
+        app:layout_constraintEnd_toStartOf="@+id/button_regist"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/button" />
+        app:layout_constraintStart_toEndOf="@+id/button_print" />
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/button_regist"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button"
-        app:layout_constraintBaseline_toBaselineOf="@+id/button2"
+        android:text="登録"
+        app:layout_constraintBaseline_toBaselineOf="@+id/button_cancel"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/button2" />
+        app:layout_constraintStart_toEndOf="@+id/button_cancel" />
 
     <Button
-        android:id="@+id/button5"
+        android:id="@+id/button_create"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
-        android:text="Button"
-        app:layout_constraintEnd_toStartOf="@+id/button6"
+        android:text="新規作成"
+        app:layout_constraintEnd_toStartOf="@+id/button_duplicate"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button2" />
+        app:layout_constraintTop_toBottomOf="@+id/button_cancel" />
 
     <Button
-        android:id="@+id/button6"
+        android:id="@+id/button_duplicate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button"
-        app:layout_constraintBaseline_toBaselineOf="@+id/button5"
+        android:text="複製"
+        app:layout_constraintBaseline_toBaselineOf="@+id/button_create"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/button5" />
+        app:layout_constraintStart_toEndOf="@+id/button_create" />
 
     <ImageButton
         android:id="@+id/imageButton11"
@@ -107,7 +107,7 @@
         app:layout_constraintEnd_toStartOf="@+id/imageButton12"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button5"
+        app:layout_constraintTop_toBottomOf="@+id/button_create"
         app:srcCompat="@drawable/panel_list" />
 
     <ImageButton

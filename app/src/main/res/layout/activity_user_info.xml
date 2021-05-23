@@ -10,7 +10,7 @@
         android:id="@+id/dummy1"
         android:layout_width="365dp"
         android:layout_height="1dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="50dp"
         app:layout_constraintBottom_toTopOf="@id/border1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -24,6 +24,7 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="16dp"
         android:background="@drawable/border"
+        app:layout_constraintBottom_toBottomOf="@+id/text_device"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -43,26 +44,30 @@
         android:id="@+id/label_policestation"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
         android:text="警察署："
         app:layout_constraintEnd_toStartOf="@+id/text_policestation"
         app:layout_constraintHorizontal_bias="0.51"
         app:layout_constraintStart_toStartOf="@+id/border1"
-        tools:layout_editor_absoluteY="59dp" />
+        app:layout_constraintTop_toTopOf="@id/border1" />
 
     <TextView
         android:id="@+id/text_policestation"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
         android:text="奈良署"
+        app:layout_constraintBaseline_toBaselineOf="@+id/label_policestation"
         app:layout_constraintEnd_toEndOf="@+id/border1"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/label_policestation"
-        tools:layout_editor_absoluteY="59dp" />
+        app:layout_constraintStart_toEndOf="@+id/label_policestation" />
 
     <TextView
         android:id="@+id/label_telephone"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
         android:text="電話番号："
         app:layout_constraintEnd_toStartOf="@+id/text_telephone"
@@ -74,6 +79,7 @@
         android:id="@+id/text_telephone"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
         android:text="XX--XX-XXXX"
         app:layout_constraintBaseline_toBaselineOf="@+id/label_telephone"
         app:layout_constraintEnd_toEndOf="@+id/border1"
@@ -84,6 +90,7 @@
         android:id="@+id/label_extension"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
         android:text="内線番号："
         app:layout_constraintEnd_toStartOf="@+id/text_extension"
@@ -95,6 +102,7 @@
         android:id="@+id/text_extension"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
         android:text="XXXX"
         app:layout_constraintBaseline_toBaselineOf="@+id/label_extension"
         app:layout_constraintEnd_toEndOf="@+id/border1"
@@ -105,6 +113,7 @@
         android:id="@+id/label_device"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
         android:text="端末番号："
         app:layout_constraintEnd_toStartOf="@+id/text_device"
@@ -117,6 +126,7 @@
         android:id="@+id/text_device"
         android:layout_width="0dp"
         android:layout_height="17dp"
+        android:layout_marginEnd="16dp"
         android:text="XXX"
         app:layout_constraintBaseline_toBaselineOf="@+id/label_device"
         app:layout_constraintEnd_toEndOf="@+id/border1"
@@ -165,8 +175,8 @@
 
     <View
         android:id="@+id/border3"
-        android:layout_width="0dp"
-        android:layout_height="91dp"
+        android:layout_width="296dp"
+        android:layout_height="99dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="16dp"
@@ -186,40 +196,45 @@
         app:layout_constraintTop_toBottomOf="@id/dummy3" />
 
     <TextView
-        android:id="@+id/label_device_name"
+        android:id="@+id/label_input_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
         android:text="名前："
-        app:layout_constraintEnd_toStartOf="@+id/text_device_name"
+        app:layout_constraintEnd_toStartOf="@+id/text_input_name"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="@+id/border3"
-        app:layout_constraintTop_toBottomOf="@+id/border_label3" />
+        app:layout_constraintTop_toTopOf="@+id/border3" />
 
     <TextView
-        android:id="@+id/text_device_name"
+        android:id="@+id/text_input_name"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
         android:text="奈良太郎"
-        app:layout_constraintBaseline_toBaselineOf="@+id/label_device_name"
+        app:layout_constraintBaseline_toBaselineOf="@+id/label_input_name"
         app:layout_constraintEnd_toEndOf="@+id/border3"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/label_device_name" />
+        app:layout_constraintStart_toEndOf="@+id/label_input_name" />
 
     <TextView
         android:id="@+id/label_input_id"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
         android:text="ID："
         app:layout_constraintEnd_toStartOf="@+id/text_input_id"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="@+id/border3"
-        tools:layout_editor_absoluteY="304dp" />
+        app:layout_constraintTop_toBottomOf="@id/label_input_name" />
 
     <TextView
         android:id="@+id/text_input_id"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
         android:text="XXXXXX"
         app:layout_constraintBaseline_toBaselineOf="@+id/label_input_id"
         app:layout_constraintEnd_toEndOf="@+id/border3"
@@ -230,18 +245,21 @@
         android:id="@+id/label_input_period"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
         android:text="期間："
-        app:layout_constraintBaseline_toBaselineOf="@+id/text_input_period"
-        app:layout_constraintEnd_toStartOf="@+id/text_input_period"
-        app:layout_constraintStart_toStartOf="@+id/border3" />
+        app:layout_constraintStart_toStartOf="@id/border3"
+        app:layout_constraintTop_toBottomOf="@id/label_input_id" />
 
     <TextView
         android:id="@+id/text_input_period"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
         android:text="2021/01/01まで"
+        app:layout_constraintBaseline_toBaselineOf="@+id/label_input_period"
         app:layout_constraintEnd_toEndOf="@+id/border3"
-        app:layout_constraintStart_toEndOf="@id/label_input_period" />
+        app:layout_constraintStart_toEndOf="@+id/label_input_period" />
 
     <View
         android:id="@+id/dummy4"
@@ -279,17 +297,19 @@
         android:id="@+id/label_print_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
         android:text="名前："
         app:layout_constraintEnd_toStartOf="@+id/text_print_name"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="@+id/border4"
-        app:layout_constraintTop_toBottomOf="@+id/border_label4" />
+        app:layout_constraintTop_toTopOf="@+id/border4" />
 
     <TextView
         android:id="@+id/text_print_name"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
         android:text="奈良花子"
         app:layout_constraintBaseline_toBaselineOf="@+id/label_print_name"
         app:layout_constraintEnd_toEndOf="@+id/border4"
@@ -300,6 +320,7 @@
         android:id="@+id/label_print_id"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
         android:text="ID："
         app:layout_constraintEnd_toStartOf="@+id/text_print_id"
@@ -311,6 +332,7 @@
         android:id="@+id/text_print_id"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
         android:text="XXXXXX"
         app:layout_constraintBaseline_toBaselineOf="@+id/label_print_id"
         app:layout_constraintEnd_toEndOf="@+id/border4"
@@ -321,6 +343,7 @@
         android:id="@+id/label_print_period"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
         android:text="期間："
         app:layout_constraintEnd_toStartOf="@+id/text_print_period"
@@ -332,6 +355,7 @@
         android:id="@+id/text_print_period"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
         android:text="2021/01/01まで"
         app:layout_constraintBaseline_toBaselineOf="@+id/label_print_period"
         app:layout_constraintEnd_toEndOf="@+id/border4"

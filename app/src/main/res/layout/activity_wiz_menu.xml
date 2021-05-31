@@ -8,8 +8,11 @@
 
     <ImageView
         android:id="@+id/image_title"
-        android:layout_width="411dp"
-        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
         android:scaleType="fitXY"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -20,117 +23,139 @@
         android:id="@+id/button_const"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="64dp"
+        android:scaleType="fitXY"
+        android:background="@android:drawable/btn_default"
+        app:layout_constraintBottom_toTopOf="@+id/button_print"
         app:layout_constraintEnd_toStartOf="@+id/button_free"
         app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="spread"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/image_title"
         app:srcCompat="@drawable/menu_crack_const" />
 
     <ImageButton
+        android:id="@+id/button_one"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="centerInside"
+        android:background="@android:drawable/btn_default"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="@+id/button_const"
+        app:layout_constraintTop_toTopOf="@+id/button_const"
+        app:srcCompat="@drawable/menu_crack_one" />
+
+    <ImageButton
         android:id="@+id/button_free"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:background="@android:drawable/btn_default"
+        app:layout_constraintBottom_toTopOf="@+id/button_statics2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/button_const"
-        app:layout_constraintTop_toTopOf="@+id/button_const"
+        app:layout_constraintTop_toBottomOf="@+id/image_title"
         app:srcCompat="@drawable/menu_crack_free" />
 
     <ImageButton
-        android:id="@+id/button_detail"
+        android:id="@+id/button_any"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="64dp"
-        app:layout_constraintEnd_toStartOf="@+id/button_statics"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button_const"
-        app:srcCompat="@drawable/menu_crack_detail" />
+        android:scaleType="fitXY"
+        android:background="@android:drawable/btn_default"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="@+id/button_free"
+        app:layout_constraintTop_toTopOf="@+id/button_free"
+        app:srcCompat="@drawable/menu_crack_any" />
 
     <ImageButton
         android:id="@+id/button_print"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="@+id/button_detail"
-        app:layout_constraintEnd_toEndOf="@+id/button_detail"
-        app:layout_constraintTop_toTopOf="@+id/button_detail"
+        android:background="@android:drawable/btn_default"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/button_time"
+        app:layout_constraintEnd_toStartOf="@+id/button_statics2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_const"
         app:srcCompat="@drawable/menu_crack_print" />
+
+    <ImageButton
+        android:id="@+id/button_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/btn_default"
+        app:layout_constraintStart_toStartOf="@+id/button_print"
+        app:layout_constraintTop_toTopOf="@+id/button_print"
+        app:srcCompat="@drawable/menu_crack_detail" />
 
     <ImageButton
         android:id="@+id/button_statics"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/button_detail"
-        app:layout_constraintTop_toTopOf="@+id/button_detail"
+        android:background="@android:drawable/btn_default"
+        app:layout_constraintStart_toStartOf="@+id/button_statics2"
+        app:layout_constraintTop_toTopOf="@+id/button_statics2"
         app:srcCompat="@drawable/bitmap6" />
 
     <ImageButton
         android:id="@+id/button_user"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="42dp"
-        app:layout_constraintStart_toStartOf="@+id/button_statics"
-        app:layout_constraintTop_toTopOf="@+id/button_statics"
+        android:background="@android:drawable/btn_default"
+        app:layout_constraintBottom_toBottomOf="@+id/button_statics2"
+        app:layout_constraintStart_toStartOf="@+id/button_statics2"
         app:srcCompat="@drawable/bitmap7" />
-
-    <Button
-        android:id="@+id/button_time"
-        android:layout_width="88dp"
-        android:layout_height="83dp"
-        android:layout_marginTop="64dp"
-        android:text="現在時刻"
-        app:layout_constraintEnd_toStartOf="@+id/button_exit"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button_detail" />
-
-    <ImageButton
-        android:id="@+id/button_exit"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/button_time"
-        app:layout_constraintTop_toTopOf="@+id/button_time"
-        app:srcCompat="@drawable/menu_crack_exit" />
 
     <ImageButton
         android:id="@+id/button_statics2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintStart_toStartOf="@+id/button_statics"
-        app:layout_constraintTop_toTopOf="@+id/button_statics"
+        android:background="@android:drawable/btn_default"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/button_exit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/button_print"
+        app:layout_constraintTop_toBottomOf="@+id/button_free"
         app:srcCompat="@drawable/menu_crack_sta" />
+
+    <Button
+        android:id="@+id/button_time"
+        android:layout_width="88dp"
+        android:layout_height="83dp"
+        android:background="@android:drawable/btn_default"
+        android:text="現在時刻"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/text_battery"
+        app:layout_constraintEnd_toStartOf="@+id/button_exit"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_print" />
+
+    <ImageButton
+        android:id="@+id/button_exit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/btn_default"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/text_battery"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/button_time"
+        app:layout_constraintTop_toBottomOf="@+id/button_statics2"
+        app:srcCompat="@drawable/menu_crack_exit" />
 
     <TextView
         android:id="@+id/text_battery"
-        android:layout_width="379dp"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="16dp"
-        android:text="TextView"
+        android:background="@drawable/border"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
-
-    <ImageButton
-        android:id="@+id/imageButton8"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintStart_toStartOf="@+id/button_free"
-        app:layout_constraintTop_toTopOf="@+id/button_free"
-        app:srcCompat="@drawable/menu_crack_any" />
-
-    <ImageButton
-        android:id="@+id/imageButton9"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintEnd_toEndOf="@+id/button_const"
-        app:layout_constraintTop_toTopOf="@+id/button_const"
-        app:srcCompat="@drawable/menu_crack_one" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
